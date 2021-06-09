@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/twiz/static/css/main.d360990b.chunk.css",
+    "main.js": "/twiz/static/js/main.79d665d4.chunk.js",
+    "main.js.map": "/twiz/static/js/main.79d665d4.chunk.js.map",
+    "runtime-main.js": "/twiz/static/js/runtime-main.50ea802f.js",
+    "runtime-main.js.map": "/twiz/static/js/runtime-main.50ea802f.js.map",
+    "static/js/2.0ed48ee9.chunk.js": "/twiz/static/js/2.0ed48ee9.chunk.js",
+    "static/js/2.0ed48ee9.chunk.js.map": "/twiz/static/js/2.0ed48ee9.chunk.js.map",
+    "index.html": "/twiz/index.html",
+    "static/css/main.d360990b.chunk.css.map": "/twiz/static/css/main.d360990b.chunk.css.map",
+    "static/js/2.0ed48ee9.chunk.js.LICENSE.txt": "/twiz/static/js/2.0ed48ee9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50ea802f.js",
+    "static/js/2.0ed48ee9.chunk.js",
+    "static/css/main.d360990b.chunk.css",
+    "static/js/main.79d665d4.chunk.js"
+  ]
+}
