@@ -1,4 +1,5 @@
 body {
+  font-size: 1.2rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,24 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0.5em;
+}
+
+button, .btn {
+  font-size: inherit;
+  padding: 0.35em 1em;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.center {
+  text-align: center;
+  text-anchor: middle;
 }

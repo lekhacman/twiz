@@ -6,22 +6,55 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.27.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "homepage": "https://lekhacman.github.io/twiz",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:cov": "react-scripts test --coverage",
+    "eject": "react-scripts eject",
+    "fix": "eslint --fix src",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest/globals": true
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2018
+    },
     "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "jest",
+      "prettier",
+      "react"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "trailingComma": "es5"
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +67,33 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard-react": "^11.0.1",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "gh-pages": "^3.2.0",
+    "prettier": "^2.3.1"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "text-summary",
+      "clover"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }
